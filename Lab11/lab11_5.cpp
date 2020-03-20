@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//Interface of Class
+
 class Animal
 {
 protected:
@@ -45,7 +47,13 @@ public:
     OwnedBird(string name, int happiness ,int energy, int fullness);
 };
 
+
+
+// ------------------------
 //implement member function
+
+
+
 
 Animal::Animal(int happiness, int energy, int fullness){
         this->happiness = happiness;
@@ -140,6 +148,8 @@ OwnedBird::OwnedBird(string name, int happiness, int energy, int fullness):Bird(
     this->fullness = fullness;
     limitStat();
 }
+
+
 
 
 
