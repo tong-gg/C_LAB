@@ -111,6 +111,7 @@ void Pet::setName(string name){
     this->name = name;
 }
 
+// print out function
 string Pet::toString(){
     stringstream ss;
     ss << "Pet's Name: " + name << endl
