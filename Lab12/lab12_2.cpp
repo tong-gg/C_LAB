@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std; 
+using namespace std;
 
 class Transportation
 {
@@ -10,17 +10,16 @@ class Transportation
 class Taxi : public Transportation
 {
     private:
+        double price = 35;
         double distance;
     public:
         void setDistance(double distance){
             if (distance > 0){
-                this->distance = distance;
+                price += distance * 2;
             }
         }
         double fare(){
-            double total = 35;
-            total += distance * 2;
-            return total;
+            return price;
         }
 };
 

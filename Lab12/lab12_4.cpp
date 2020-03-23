@@ -4,24 +4,22 @@ using namespace std;
 class Transportation
 {
     public:
-        virtual int fare() = 0;
+        virtual double fare() = 0;
 };
 
 class BTS : public Transportation
 {
     private:
+        double price = 15;
         int station;
     public:
         void setStation(int station){
-            if(station > 0){
                 this->station = station;
-            }
         }
-        int fare(){
-            int total = 15;
-            total += station * 5;
-            return total;
-        }
+        double fare(){
+            price += station * 5;
+            return price;
+
 };
 
 int main()
